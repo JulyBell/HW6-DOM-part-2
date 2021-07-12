@@ -1,12 +1,5 @@
 console.log('------------- # 3');
 
-// описываем стили фигур:
-let rectangular = 'width: 150px; height: 100px; background-color: black;   -moz-border-radius: 0%; -webkit-border-radius: 0%; border-radius: 0%; margin-top: 10px;';
-
-let square = 'width: 100px; height: 100px; background-color: black;   -moz-border-radius: 0%; -webkit-border-radius: 0%; border-radius: 0%; margin-top: 10px;'
-
-let circle = 'width: 100px; height: 100px; background-color: black; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; margin-top: 10px';
-
 
 //получаем элементы по id:
 let select = document.querySelector('#selectFigure');
@@ -27,7 +20,7 @@ function colorProcessing(e){
 	let color = colorInput.value;
 
 	
-	figureArea.style["background-color"] = color;
+		figureArea.style["background-color"] = color;
 	
 }
 
@@ -43,15 +36,15 @@ function showSelectedFigure(){
 
 	switch(figureToShow){
 		case 'Rectangle':
-		figureArea.style = rectangular;
+		figureArea.className = 'rectangular';
 		break;
 
 		case 'Square':
-		figureArea.style = square;
+		figureArea.className = 'square';
 		break;
 
 		case 'Circle':
-		figureArea.style = circle;
+		figureArea.className = 'circle';
 		break;
 
 		default:

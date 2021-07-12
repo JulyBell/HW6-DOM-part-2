@@ -2,6 +2,32 @@ body{
 	background-color: #32c655;
 }
 
+.rectangular{
+	width: 150px;
+   height: 100px;
+   background-color: #000;   
+   -moz-border-radius: 0%;
+   -webkit-border-radius: 0%;
+   border-radius: 0%;
+}
+
+.circle{
+	width: 100px;
+   height: 100px;
+   background-color: #000;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+}
+
+.square{
+	width: 100px;
+   height: 100px;
+   background-color: #000;   
+   -moz-border-radius: 0%;
+   -webkit-border-radius: 0%;
+   border-radius: 0%;
+}
 
 #main{
 	align-content: center;
@@ -19,8 +45,8 @@ body{
 }
 
 #figures{
-	width:300px;
-	height:100px;
+	height: 100px;
+	margin-top: 10px;
 	margin-left: 30%;
 }
 
